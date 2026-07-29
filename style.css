@@ -1,0 +1,83 @@
+/* Configuração Geral e Fonte */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container do Formulário */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Ajuste dos Labels (Títulos dos Campos) */
+label {
+    display: block;
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Campos de Entrada (E-mail e Mensagem) */
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 15px;
+    color: #333333;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Altura fixa para a caixa de mensagem */
+textarea {
+    height: 120px;
+    resize: vertical; /* Permite o usuário aumentar apenas a altura */
+}
+
+/* Efeito de Clique/Foco nos Campos */
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4a90e2;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+    outline: none;
+}
+
+/* Botão de Enviar */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Efeitos do Botão (Passar o mouse e Clicar) */
+button[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
