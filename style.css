@@ -1,5 +1,4 @@
 /* CONFIGURAÇÕES GERAIS */
-@import url('https://googleapis.com');
 
 * {
     margin: 0;
@@ -211,10 +210,11 @@ section {
     position: relative;
     height: 25rem;
     border-radius: 2rem;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://unsplash.com') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(11,12,16,0.95), rgba(31,64,104,0.85));
     border: 2px solid var(--dark-blue);
     overflow: hidden;
     display: flex;
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
 }
 
 .projeto-box:hover {
