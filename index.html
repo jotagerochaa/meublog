@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Ícones gratuitos -->
+    <title>João Gabriel | Portfólio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Ícones (Exemplo usando Font Awesome. Ajuste a URL se usar outra biblioteca) -->
     <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -27,14 +31,14 @@
             <h3>Olá, eu sou</h3>
             <h1>João Gabriel</h1>
             <h3>E eu sou <span class="text-blue">Desenvolvedor Web</span></h3>
-            <p>Seja bem-vindo ao meu portfólio. Aqui você encontrará alguns dos meus principais projetos e tecnologias que domino.</p>
+            <p>Seja bem-vindo ao meu portfólio. Aqui você encontrará os principais projetos que desenvolvi, minhas habilidades técnicas e os meios para entrar em contato comigo.</p>
             
-            <!-- Alterado: Links agora em formato de caixa pequena com texto interno -->
+            <!-- Links Rápidos / Redes Sociais -->
             <div class="social-media">
-                <a href="https://linkedin.com" target="_blank">Acessar LinkedIn</a>
-                <a href="https://github.com/jotagerochaa" target="_blank">Acessar GitHub</a>
+                <a href="https://github.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
-            
+
             <a href="#contato" class="btn">Contrate-me</a>
         </div>
     </section>
@@ -43,21 +47,15 @@
     <section class="sobre" id="sobre">
         <div class="sobre-content">
             <h2 class="heading">Sobre <span>Mim</span></h2>
-            <h3>Desenvolvedor focado em criar experiências digitalmente incríveis.</h3>
-            <p> Olá! Sou um desenvolvedor focado em criar experiências digitalmente incríveis.
-                 Minha jornada na tecnologia começou pelo interesse em resolver problemas reais através do código. 
-                 Hoje, transformo ideias em aplicações web e mobile robustas, combinando performance no back-end com interfaces intuitivas no front-end.
-                 Atualmente, curso Técnico em Desenvolvimento de Sistemas e busco oportunidades para atuar como Desenvolvedor Full Stack,
-                  onde eu possa contribuir com meu ecossistema de habilidades e evoluir continuamente.</p>
-                  <p>Minhas principais linguagens de dominio incluem:</p>
+            <h3>Construindo experiências digitais modernas</h3>
+            <p>Sou um desenvolvedor focado em criar interfaces limpas, rápidas e acessíveis. Transformo layouts e ideias em códigos eficientes usando as melhores práticas de desenvolvimento do mercado.</p>
+            
             <div class="skills">
                 <span class="skill-badge">HTML5</span>
                 <span class="skill-badge">CSS3</span>
                 <span class="skill-badge">JavaScript</span>
                 <span class="skill-badge">React</span>
-                <span class="skill-badge">React Native</span>
-                <span class="skill-badge">Golang</span>
-                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">Git</span>
             </div>
         </div>
     </section>
@@ -65,30 +63,42 @@
     <!-- SEÇÃO PROJETOS -->
     <section class="projetos" id="projetos">
         <h2 class="heading">Meus <span>Projetos</span></h2>
+        
         <div class="projetos-container">
-            <!-- Projeto TI-DIGITAL -->
+            <!-- Projeto 1 -->
             <div class="projeto-box">
                 <div class="projeto-layer">
-                    <h4>TI-DIGITAL</h4>
-                    <p>Acessos internos e a plataformas educacionais do Colégio Martin Luther.</p>
-                    <a href="https://github.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="info-top">
+                        <h4>E-commerce App</h4>
+                        <p>Uma plataforma completa de vendas online com carrinho dinâmico e design responsivo otimizado.</p>
+                    </div>
+                    <a href="#" aria-label="Ver projeto E-commerce"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="projeto-box">
+                <div class="projeto-layer">
+                    <div class="info-top">
+                        <h4>Dashboard de Finanças</h4>
+                        <p>Interface administrativa para controle financeiro pessoal, exibindo gráficos e métricas de desempenho.</p>
+                    </div>
+                    <a href="#" aria-label="Ver projeto Dashboard"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO CONTATO (Formspree) -->
+    <!-- SEÇÃO CONTATO -->
     <section class="contato" id="contato">
         <h2 class="heading">Entre em <span>Contato</span></h2>
-        <form action="https://formspree.io" method="POST">
+        
+        <form action="#">
             <div class="input-box">
-                <input type="text" name="nome" placeholder="Seu Nome Completo" required>
-                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="email" placeholder="E-mail" required>
             </div>
-            <div class="input-box">
-                <input type="text" name="assunto" placeholder="Assunto da Mensagem" required>
-            </div>
-            <textarea name="mensagem" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+            <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
             <button type="submit" class="btn">Enviar Mensagem</button>
         </form>
     </section>
@@ -96,10 +106,10 @@
     <!-- RODAPÉ -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2026 por João Gabriel | Todos os direitos reservados.</p>
+            <p>&copy; 2026 João Gabriel. Todos os direitos reservados.</p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home"><i class="fas fa-angle-up"></i></a>
+            <a href="#home" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
         </div>
     </footer>
 
