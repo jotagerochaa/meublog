@@ -449,3 +449,119 @@ section {
         text-align: center;
     }
 }
+/* ==========================================================================
+   SEÇÃO CONTATO 
+
+
+/*  */
+.contato {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background-color: #1f242d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contato .heading {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.contato .heading span {
+    color: #00eeff; 
+}
+
+
+.contato form {
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #323946; 
+    padding: 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; 
+}
+
+
+.contato form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+
+.contato form input,
+.contato form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #1f242d; /* Fundo interno contrastante */
+    border: .2rem solid transparent;
+    border-radius: .8rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+    box-sizing: border-box; 
+}
+
+
+.contato form textarea {
+    height: 20rem;
+    resize: vertical;
+}
+
+
+.contato form input:focus,
+.contato form textarea:focus {
+    border-color: #00eeff;
+    outline: none;
+    box-shadow: 0 0 1rem rgba(0, 238, 255, 0.3);
+}
+
+
+.contato form button[type="submit"] {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background: #00eeff;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #00eeff;
+    font-size: 1.6rem;
+    color: #1f242d;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease;
+    align-self: center; /* Centraliza apenas o botão no eixo horizontal */
+    margin-top: 1.5rem;
+    min-width: 16rem;
+}
+
+
+.contato form button[type="submit"]:hover {
+    box-shadow: none;
+    background: #fff;
+    color: #1f242d;
+    transform: scale(1.02);
+}
+
+.contato form button[type="submit"]:active {
+    transform: scale(0.98);
+}

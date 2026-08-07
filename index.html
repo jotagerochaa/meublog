@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Gabriel | Portifólio</title>
-    
     <!-- Google Fonts (Corrigido para carregar a fonte Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Ícones (CDN oficial do Font Awesome para ativar os ícones das redes e botões) -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- <link rel="stylesheet" href="https://cloudflare.com"> -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- CABEÇALHO -->
     <header class="header">
         <a href="#" class="logo">Portfólio<span>.</span></a>
         <nav class="navbar">
-            <a href="#home" class="active">Início</a>
+            <a href="index.html" class="active">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#projetos">Projetos</a>
+            <a href="ia.html">IA</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
@@ -33,15 +35,17 @@
             <h3>Olá, eu sou</h3>
             <h1>João Gabriel</h1>
             <h3>E eu sou <span class="text-blue">Desenvolvedor Web</span></h3>
-            <p>Seja bem-vindo ao meu portfólio. Aqui você encontrará os principais projetos que desenvolvi, minhas habilidades técnicas e os meios para entrar em contato comigo.</p>
-            
+            <p>Seja bem-vindo ao meu portfólio. Aqui você encontrará os principais projetos que desenvolvi, minhas
+                habilidades técnicas e os meios para entrar em contato comigo.</p>
+
             <!-- Links Rápidos / Redes Sociais -->
             <div class="social-media">
                 <a href="https://github.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>
+                    LinkedIn</a>
             </div>
 
-            <a href="#contato" class="btn">Contrate-me</a>
+            <a href="#contato" class="btn">Contate-me</a>
         </div>
     </section>
 
@@ -50,8 +54,9 @@
         <div class="sobre-content">
             <h2 class="heading">Sobre <span>Mim</span></h2>
             <h3>Construindo experiências digitais modernas</h3>
-            <p>Sou um desenvolvedor focado em criar interfaces limpas, rápidas e acessíveis. Transformo layouts e ideias em códigos eficientes usando as melhores práticas de desenvolvimento do mercado.</p>
-            
+            <p>Sou um desenvolvedor focado em criar interfaces limpas, rápidas e acessíveis. Transformo layouts e ideias
+                em códigos eficientes usando as melhores práticas de desenvolvimento do mercado.</p>
+
             <div class="skills">
                 <span class="skill-badge">HTML5</span>
                 <span class="skill-badge">CSS3</span>
@@ -65,7 +70,7 @@
     <!-- SEÇÃO PROJETOS -->
     <section class="projetos" id="projetos">
         <h2 class="heading">Meus <span>Projetos</span></h2>
-        
+
         <div class="projetos-container">
             <!-- Projeto 1 -->
             <div class="projeto-box">
@@ -75,7 +80,8 @@
                         <p>Uma plataforma completa de acessos a aplicativos internos do Colegio Martin Luther.</p>
                     </div>
                     <!-- Alterado: Substituída a bola pelo botão "Veja o projeto" -->
-                    <a href="https://github.com/jotagerochaa/TI-DIGITAL" class="btn-projeto" target="_blank" rel="noopener" aria-label="Ver projeto TI DIGITAL"> <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/jotagerochaa/TI-DIGITAL" class="btn-projeto" target="_blank"
+                        rel="noopener" aria-label="Ver projeto TI DIGITAL"> <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
@@ -87,7 +93,8 @@
                         <p>Interface curricular.</p>
                     </div>
                     <!-- Alterado: Substituída a bola pelo botão "Veja o projeto" -->
-                    <a href="https://github.com/jotagerochaa/meublog" class="btn-projeto" target="_blank" rel="noopener" aria-label="Ver projeto Meu Portifólio"> <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/jotagerochaa/meublog" class="btn-projeto" target="_blank" rel="noopener"
+                        aria-label="Ver projeto Meu Portifólio"> <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -96,15 +103,21 @@
     <!-- SEÇÃO CONTATO -->
     <section class="contato" id="contato">
         <h2 class="heading">Entre em <span>Contato</span></h2>
-        
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Nome Completo" required>
-                <input type="email" placeholder="E-mail" required>
-            </div>
-            <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit" class="btn">Enviar Mensagem</button>
-        </form>
+        <form
+  action="https://formspree.io/f/mrendqbw"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </section>
 
     <!-- RODAPÉ -->
@@ -116,6 +129,7 @@
             <a href="#home" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
         </div>
     </footer>
-
+  
 </body>
+
 </html>
